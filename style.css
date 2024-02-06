@@ -1,41 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 * {
+    box-sizing: border-box;
+
+}
+html, body {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
-nav {
-    padding: 10px 0;
+header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #F0F0F0;
     background-color: #0B3954;
+    padding: 2rem;
+    align-items: center;
 }
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 15px;
+header #logo {
+    margin-right: 4rem;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 2rem;
 }
-nav ul li a {
+header nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+header a {
     text-decoration: none;
-    color: #F0F0F0;
+    color: #f1f1f1;
 }
-.nav-btn {
-    text-decoration: none;
+header #nav-signup {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    align-items: center;
+}
+header #nav-signup button {
+    background-color: #9D5691;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+section#hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
 }
-.nav-sign-up {
-    display: inline-block;
-    text-decoration: none;
-     color: #fff;
-    padding: 14px 40px;
-    margin-right: 30px;
-    font-weight: 400;
+section#hero .hero-text {
+    margin: auto;
+    padding: 2rem;
+}
+section#hero h1 {
+    color: #9D5691;
+    font-size: 2rem;
+}
+section#hero p {
+    color: #0B3954;
+}
+section#hero button {
     background-color: #9D5691;
-    font-size: 14px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem #838384;
+}
+section#hero #hero-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#hero #hero-feature {
+    z-index: 1;
+    height: 400px;
+}
+section#hero #hero-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+section#flower-shop h3 {
+    text-align: center;
+}
+section#flower-shop .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+section#flower-shop .row .box {
+    border: 1px solid #eeeeee;
+    padding: 1rem;
+    width: 300px;
+}
+section#flower-shop .row .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+section#flower-shop .row .box button {
+    background-color: #368F8B;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    cursor: pointer;
+    display: block;
+    margin: auto;
 }
